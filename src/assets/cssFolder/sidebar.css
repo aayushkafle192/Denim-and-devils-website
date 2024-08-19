@@ -1,0 +1,43 @@
+.sidebar1 {
+    width: 200px;
+    height: 100vh;
+    background-color: #99a3ad;
+    color: rgb(30, 25, 25);
+    padding: 20px;
+}
+
+.sidebar1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar1 ul li {
+    margin: 20px 0;
+}
+
+.sidebar1 ul li a {
+    color: rgb(85, 85, 81);
+    text-decoration: none;
+    margin-bottom: 61px;
+    display: inline-block;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    /* margin-left: 20px; */
+    /* border: 2px solid pink; */
+    width: 200px;
+    /* margin-right: 20px; */
+    margin-left: -22px;
+    background-color: #b8babe;
+}
+
+.sidebar1 ul li a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.logo {
+    width: 65px;
+    height: 80px;
+    margin-left: 30px;
+}

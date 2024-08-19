@@ -1,0 +1,45 @@
+.clip-path-separator {
+    clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 0 0);
+    z-index: -1;
+    /* Ensure this element is behind the content */
+}
+
+.background-image {
+    background-image: url('../images/graytshirt-removebg-preview.png');
+    background-size: cover;
+    /* Ensure the entire image is visible */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center;
+    /* Center the image within the element */
+    height: 83.33%;
+    /* This corresponds to 5/6 height */
+    border-radius: 1.5rem;
+    /* This corresponds to rounded-3xl */
+}
+
+.backgroundImage {
+    background-image: url('../images/classicbold.jpg');
+    background-size: contain;
+    /* Ensure the entire image is visible */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: top center;
+    /* Center the image within the element */
+    height: 100%;
+    /* This corresponds to 5/6 height */
+    /* border-radius: 1.5rem; */
+    /* This corresponds to rounded-3xl */
+}
+
+.custom-toast {
+    font-size: 14px;
+    /* Adjust the font size */
+    padding: 10px;
+    /* Adjust the padding */
+}
+
+.custom-toast .Toastify__toast-body {
+    margin: 0;
+    padding: 0;
+}
