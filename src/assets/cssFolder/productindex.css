@@ -40,3 +40,10 @@ td {
     height: 40px;
     width: 70px;
 }
+
+.aa {
+    background-color: #d99939;
+    width: 70px;
+    font-size: x-small;
+    /* height: 20px; */
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'; // Import QueryClient and QueryClientProvider
-import Signup from '../src/public/signup'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Signup from './public/signup';
 import Home from './public/home';
 import Login from './public/login';
 import Aboutus from './public/aboutus';
@@ -15,6 +15,8 @@ import ProductForm from './admin/product/productform';
 import ProductIndex from './admin/product/productindex';
 import OrderForm from './admin/order/orderform';
 import OrderIndex from './admin/order/orderindex';
+import CategoryIndex from './admin/category/categoryindex';
+import CategoryForm from './admin/category/categoryform';
 
 // Create a QueryClient instance
 const queryClient = new QueryClient();
@@ -33,9 +35,13 @@ const App: React.FC = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/dashboard" element={<Dashboard />}>
             <Route path="productform" element={<ProductForm />} />
+            <Route path="productform/:id" element={<ProductForm />} /> {/* Route for editing a product */}
             <Route path="productindex" element={<ProductIndex />} />
             <Route path="orderform" element={<OrderForm />} />
             <Route path="orderindex" element={<OrderIndex />} />
+            <Route path="categoryform" element={<CategoryForm />} />
+            <Route path="categoryform/:id" element={<CategoryForm />} /> {/* Route for editing a category */}
+            <Route path="categoryindex" element={<CategoryIndex />} />
           </Route>
         </Routes>
         <ToastContainer />

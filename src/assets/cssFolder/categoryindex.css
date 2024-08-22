@@ -1,0 +1,64 @@
+.category-index-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.category-table th,
+.category-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.category-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.category-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.category-table tr:hover {
+    background-color: #ddd;
+}
+
+.add-btn,
+.edit-btn,
+.delete-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: #008CBA;
+}
+
+.edit-btn {
+    background-color: #ffa500;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}

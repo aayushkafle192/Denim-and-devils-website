@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
             <ul>
                 <li><Link to="/dashboard/productform">Product</Link></li>
                 <li><Link to="/dashboard/orderform">Order</Link></li>
-                <li><Link to="/dashboard/services">Category</Link></li>
+                <li><Link to="/dashboard/categoryform">Category</Link></li>
             </ul>
         </div>
     );

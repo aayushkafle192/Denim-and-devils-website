@@ -7,6 +7,7 @@ import '../../assets/cssFolder/orderindex.css'; // Add your CSS file for styling
 // Fetch orders from the backend
 const fetchOrders = async () => {
     const response = await axios.get("http://localhost:8087/order/get");
+    console.log('API Response:', response.data); // Log response to check data structure
     return response.data.data; // Access the data property which holds the array
 };
 
@@ -39,7 +40,7 @@ const OrderIndex: React.FC = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {orders.map(order => (
+                    {orders.map((order: any) => (
                         <tr key={order.ID}>
                             <td>{order.ID}</td>
                             <td>{order.Orderdate}</td>

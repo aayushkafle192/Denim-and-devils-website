@@ -1,0 +1,35 @@
+/* categoryform.css */
+
+.category-form input,
+.category-form textarea {
+    color: black;
+    background-color: rgb(46, 50, 50);
+    /* Sets text color to black */
+}
+
+.category-form label {
+    color: black;
+    /* Sets text color of labels to black */
+}
+
+input {
+    color: black;
+}
+
+.submit-btn {
+    background-color: rgb(200, 185, 26);
+    margin-top: 20px;
+}
+
+.one {
+    color: black;
+}
+
+.two {
+    color: black;
+}
+
+.cancel-btn {
+    background-color: rgb(184, 132, 72);
+    margin-top: 10px;
+}
